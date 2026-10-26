@@ -171,7 +171,7 @@ const [paymentPreview, setPaymentPreview] = useState("");
     }
 
     if (!formData.location) {
-      toast.error('Current Team is required');
+      toast.error('Location is required');
       return;
     }
  
@@ -191,10 +191,10 @@ const [paymentPreview, setPaymentPreview] = useState("");
     }
 
    
-    if (!formData.jersey_size) {
-      toast.error('Jersey Size is required');
-      return;
-    }
+    // if (!formData.jersey_size) {
+    //   toast.error('Jersey Size is required');
+    //   return;
+    // }
 
     
     // if (!formData.jersey_sleeve) {
@@ -376,13 +376,13 @@ const [paymentPreview, setPaymentPreview] = useState("");
           <div className="space-y-1.5 sm:space-y-2">
             <Label htmlFor="location" className="flex items-center gap-2 text-xs sm:text-sm font-semibold">
               <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
-              Current Team
+              Location
             </Label>
             <Input
               id="location"
               value={formData.location}
               onChange={(e) => setFormData((prev) => ({ ...prev, location: e.target.value }))}
-              placeholder="Enter your current team"
+              placeholder="Enter your location"
               className={inputClasses}
             />
           </div>
@@ -399,7 +399,7 @@ const [paymentPreview, setPaymentPreview] = useState("");
 
     
      <PhoneInput
-      country="om"
+      country="ae"
       enableSearch={true}
       searchPlaceholder="Search country..."
       value={formData.contact_no}
@@ -449,7 +449,7 @@ const [paymentPreview, setPaymentPreview] = useState("");
     </Label>
 
     <PhoneInput
-      country="om"
+      country="ae"
       enableSearch={true}
       searchPlaceholder="Search country..."
       value={formData.whatsapp_no}
@@ -558,7 +558,7 @@ const [paymentPreview, setPaymentPreview] = useState("");
           </div>
 
           {/* Jersey Name */}
-          <div className="space-y-1.5 sm:space-y-2">
+          {/* <div className="space-y-1.5 sm:space-y-2">
             <Label htmlFor="contact" className="flex items-center gap-2 text-xs sm:text-sm font-semibold">
               <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
               Jersey Name
@@ -570,10 +570,10 @@ const [paymentPreview, setPaymentPreview] = useState("");
               placeholder="Enter Jersey Name"
               className={inputClasses}
             />
-          </div>
+          </div> */}
 
           {/* Jersey No */}
-          <div className="space-y-1.5 sm:space-y-2">
+          {/* <div className="space-y-1.5 sm:space-y-2">
             <Label htmlFor="contact" className="flex items-center gap-2 text-xs sm:text-sm font-semibold">
               <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
               Jersey Number
@@ -585,10 +585,10 @@ const [paymentPreview, setPaymentPreview] = useState("");
               placeholder="Enter Jersey No"
               className={inputClasses}
             />
-          </div>
+          </div> */}
 
           {/* Jersey Size */}
-          <div className="space-y-1.5 sm:space-y-2">
+          {/* <div className="space-y-1.5 sm:space-y-2">
             <Label className="flex items-center gap-2 text-xs sm:text-sm font-semibold">
               <Target className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
               Jersey Size*
@@ -608,7 +608,7 @@ const [paymentPreview, setPaymentPreview] = useState("");
                 ))}
               </SelectContent>
             </Select>
-          </div>
+          </div> */}
 
 
 {/* <div className="space-y-2">
@@ -642,7 +642,7 @@ const [paymentPreview, setPaymentPreview] = useState("");
 
         </div>
 
-       <div className="flex flex-col items-center justify-center gap-4 p-5 rounded-xl border border-border bg-card shadow-sm">
+       {/* <div className="flex flex-col items-center justify-center gap-4 p-5 rounded-xl border border-border bg-card shadow-sm">
   <h3 className="text-lg font-semibold">
     Payment Information
   </h3>
@@ -672,11 +672,11 @@ const [paymentPreview, setPaymentPreview] = useState("");
   <p className="text-xs text-center text-muted-foreground">
     Use this payment number to complete your registration payment.
   </p>
-</div>
+</div> */}
 
 
 
-<div className="flex flex-col gap-4 p-5 rounded-xl border border-border bg-card shadow-sm">
+{/* <div className="flex flex-col gap-4 p-5 rounded-xl border border-border bg-card shadow-sm">
   <h3 className="text-lg font-semibold text-center">
     Contact Information
   </h3>
@@ -718,7 +718,7 @@ const [paymentPreview, setPaymentPreview] = useState("");
   <p className="text-xs text-center text-muted-foreground">
     Contact any of the above persons for registration or payment assistance.
   </p>
-</div>
+</div> */}
 
 
 

@@ -62,7 +62,7 @@ const HomePage = () => {
 
   
 {/* Compact Contact Information */}
-<div className="rounded-xl border border-slate-200 bg-white p-3 shadow-sm">
+{/* <div className="rounded-xl border border-slate-200 bg-white p-3 shadow-sm">
 
   <h3 className="mb-2 text-center text-xs font-black uppercase tracking-widest text-blue-950">
     Contact Information
@@ -108,7 +108,7 @@ const HomePage = () => {
     Contact us for registration and payment assistance.
   </p>
 
-</div>
+</div> */}
 
 
 </div>

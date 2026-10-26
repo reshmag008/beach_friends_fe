@@ -248,7 +248,7 @@ useEffect(() => {
             </p>
 
             <h2 className="mt-1 text-2xl lg:text-3xl xl:text-4xl font-black text-white tracking-wide">
-              ASIAN PREMIER LEAGUE SEASON 2
+              BEACH FRIENDS T-20 CHAMPIONS CUP
             </h2>
 
           </div>
